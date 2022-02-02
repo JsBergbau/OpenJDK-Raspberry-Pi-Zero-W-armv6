@@ -109,6 +109,8 @@ Distribute VM to your target system and have fun.
 
 I used this VM to run https://github.com/AsamK/signal-cli on a Raspberry PI Zero W and it works. You have to install rust on Raspberry PI and compile the native signal-client library on the Raspberry PI Zero W. This took about 193 minutes, about 3,25 hours. But after that it works. For more details of how to build, see https://github.com/AsamK/signal-cli/wiki/Provide-native-lib-for-libsignal
 
+Startup takes some time, but even on a Raspbperry PI 400 with fast SSD disk it takes about 20 seconds until `signal-cli -a <Number> jsonRpc` starts and receives messages. However when it runs, then CPU usage is quite low.
+
 
 
 
