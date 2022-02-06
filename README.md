@@ -67,6 +67,8 @@ sudo qemu-debootstrap \
 ```
 We use buster here as sysroot and not bullseye. This JDK build will also run on Debian 11 / Bullseye. The other way round could be problematic.
 
+Adopt links via `sudo chroot ~/sysroot-armhf symlinks -cr .`
+
 Targetsystem where OpenJDK will be running:
 ```
 uname -a
