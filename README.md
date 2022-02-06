@@ -104,6 +104,15 @@ Lets explain the options
 * `--with-jvm-variants=client` That is very important. Without this you will get ```Error occurred during initialization of VM
 Server VM is only supported on ARMv7+ VFP```
 
+Regarding functionality there is no difference between client and server VM. In fact client VM will need less memory than server VM.
+
+https://www.oracle.com/java/technologies/hotspotfaq.html
+
+> What's the difference between the -client and -server systems?
+> 
+> These two systems are different binaries. They are essentially two different compilers (JITs)interfacing to the same runtime system. The client system is optimal for applications which need fast startup times or small footprints, the server system is optimal for applications where the overall performance is most important. In general the client system is better suited for interactive applications such as GUIs. Some of the other differences include the compilation policy,heap defaults, and inlining policy.
+
+
 Your JDK is now in `~/jdk-jdk-17-ga/build/linux-arm-client-release/images/jdk`
 If you don't need debug information use 
 * `find . -iname '*.diz' -delete` to delete all debug information files
