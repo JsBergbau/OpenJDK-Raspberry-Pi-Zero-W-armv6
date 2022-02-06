@@ -29,7 +29,7 @@ Make sure to select ARM 32-bit HF and then have a look at the Architecture colum
 
 Current (February 2022) there is no JDK17 for armv6.
 
-## Build the JDK on your own
+## Build OpenJDK 17 on your own
 
 You can build your JDK on your own. Go to releases on the official repository https://github.com/openjdk/jdk/tags and select your desired version. For this repo I've chosen https://github.com/openjdk/jdk/releases/tag/jdk-17-ga 
 Download the source code and extract it.
@@ -42,7 +42,7 @@ You need a fitting crosscompiler to compile. There is currently none working so 
 
 The path of the cross compiler matters. It has to be put into `/opt/cross-pi-gcc/`
 
-### System requirements for building OpenJDK for armv6
+### System requirements for building OpenJDK 17 for armv6
 
 You need at least about 7 GB free diskspace. With packing files and stuff like that I recommend at least 10 GB free space, better 15 GB. A fast SSD is very helpful. A VirtualBox Debian is quite useful for compiling. 
 
