@@ -81,7 +81,7 @@ Release:        11
 Codename:       bullseye
 ```
 
-Now lets make the crosscompiler 
+Now lets make the crosscompiler available via 
 `export PATH=/opt/cross-pi-gcc/bin:/opt/cross-pi-gcc/libexec/gcc/arm-linux-gnueabihf/10.1.0:$PATH`
 
 ```
